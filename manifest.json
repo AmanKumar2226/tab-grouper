@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Tab Grouper",
+    "version": "1.0",
+    "description": "Organize and group your tabs to minimize confusion.",
+    "permissions": ["tabs", "tabGroups", "activeTab", "scripting"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  
