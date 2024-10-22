@@ -1,0 +1,95 @@
+/* Basic body styling */
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #F5CB5C;
+    padding: 20px;
+    margin: 0;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Headline styling */
+  h2 {
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+
+  /* Button styling with animation */
+  button {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #242423;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  button:hover {
+    background-color: #333533;
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+
+  button:active {
+    background-color: #003f7f;
+  }
+
+  /* Styling for the list container */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Styling for each list item */
+  li {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Hover effect for list items Smooth fade-in animation for the list */
+  li:hover {
+    /* background-color: #f1f1f1; */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* color: white;
+    background-color: #333533; */
+    transform: scale(1.05); 
+    /* transform: translateY(20px);
+    animation: fadeIn 0.5s forwards ease-in-out; */
+  }
+
+  /* Keyframes for fade-in animation */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  #groupSelect{
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  #groupSelect:hover{
+    transform: scale(1.05); 
+  }

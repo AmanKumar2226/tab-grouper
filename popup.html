@@ -2,16 +2,14 @@
 <html>
 <head>
   <title>Tab Grouper</title>
-  <style>
-    body { font-family: Arial, sans-serif; padding: 10px; }
-    button { margin-top: 10px; }
-    ul { list-style-type: none; padding: 0; }
-    li { margin-bottom: 5px; }
-  </style>
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <h2>Open Tabs</h2>
   <ul id="tabList"></ul>
+  <select id="groupSelect">
+    <option value="" disabled selected>Add in an existing group</option>
+  </select>  
   <button id="groupSelectedTabs">Group Selected Tabs</button>
   <script src="popup.js"></script>
 </body>
